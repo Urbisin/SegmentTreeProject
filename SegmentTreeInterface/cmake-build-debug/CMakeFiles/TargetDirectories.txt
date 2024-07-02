@@ -1,0 +1,5 @@
+/Users/urbisin/Documents/Universidad/Quinto Ciclo/Algoritmos y Estructuras de Datos/Proyecto/SegmentTreeInterface/cmake-build-debug/CMakeFiles/SegmentTreeQt.dir
+/Users/urbisin/Documents/Universidad/Quinto Ciclo/Algoritmos y Estructuras de Datos/Proyecto/SegmentTreeInterface/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/urbisin/Documents/Universidad/Quinto Ciclo/Algoritmos y Estructuras de Datos/Proyecto/SegmentTreeInterface/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/urbisin/Documents/Universidad/Quinto Ciclo/Algoritmos y Estructuras de Datos/Proyecto/SegmentTreeInterface/cmake-build-debug/CMakeFiles/SegmentTreeQt_autogen_timestamp_deps.dir
+/Users/urbisin/Documents/Universidad/Quinto Ciclo/Algoritmos y Estructuras de Datos/Proyecto/SegmentTreeInterface/cmake-build-debug/CMakeFiles/SegmentTreeQt_autogen.dir
