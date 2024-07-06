@@ -4,7 +4,6 @@
 #include <QMainWindow>
 #include <QGraphicsScene>
 #include <QGraphicsView>
-#include <QGraphicsTextItem>
 #include <QLineEdit>
 #include <QPushButton>
 #include <vector>
@@ -20,17 +19,21 @@ public:
 
 private slots:
     void onGenerateTree();
+    void onUpdateTree();
 
 private:
+    void drawTree(const std::vector<std::tuple<int, int, int, int, int>>& tree_structure, const std::vector<int>& inputVector);
+    void drawNode(int x, int y, int radius, const QString& text, bool isQuery);
+    void drawLine(int x1, int y1, int x2, int y2);
+
     QGraphicsScene *scene;
     QGraphicsView *view;
     QLineEdit *inputField;
+    QLineEdit *updateIndexField;
+    QLineEdit *updateValueField;
     QPushButton *generateButton;
+    QPushButton *updateButton;
     SegmentTree<int> *segTree;
-
-    void drawTree(const std::vector<std::tuple<int, int, int>>& tree_structure, const std::vector<int>& inputVector);
-    void drawNode(int x, int y, int radius, const QString& text);
-    void drawLine(int x1, int y1, int x2, int y2);
 };
 
 #endif // MAINWINDOW_H

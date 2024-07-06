@@ -815,7 +815,6 @@
   /Users/urbisin/Qt/6.7.2/macos/lib/QtGui.framework/Versions/A/Headers/qkeysequence.h \
   /Users/urbisin/Qt/6.7.2/macos/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h \
   /Users/urbisin/Qt/6.7.2/macos/lib/QtGui.framework/Versions/A/Headers/qpainter.h \
-  /Users/urbisin/Qt/6.7.2/macos/lib/QtGui.framework/Versions/A/Headers/qpainterpath.h \
   /Users/urbisin/Qt/6.7.2/macos/lib/QtGui.framework/Versions/A/Headers/qpalette.h \
   /Users/urbisin/Qt/6.7.2/macos/lib/QtGui.framework/Versions/A/Headers/qpen.h \
   /Users/urbisin/Qt/6.7.2/macos/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h \
@@ -834,7 +833,6 @@
   /Users/urbisin/Qt/6.7.2/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
   /Users/urbisin/Qt/6.7.2/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
   /Users/urbisin/Qt/6.7.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsScene \
-  /Users/urbisin/Qt/6.7.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsTextItem \
   /Users/urbisin/Qt/6.7.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsView \
   /Users/urbisin/Qt/6.7.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QLineEdit \
   /Users/urbisin/Qt/6.7.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
@@ -842,7 +840,6 @@
   /Users/urbisin/Qt/6.7.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h \
   /Users/urbisin/Qt/6.7.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h \
   /Users/urbisin/Qt/6.7.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
-  /Users/urbisin/Qt/6.7.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsitem.h \
   /Users/urbisin/Qt/6.7.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsscene.h \
   /Users/urbisin/Qt/6.7.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsview.h \
   /Users/urbisin/Qt/6.7.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qlineedit.h \

@@ -12,6 +12,6 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-add_executable(SegmentTreeQt main.cpp mainwindow.cpp SegmentTree.cpp)
+add_executable(SegmentTreeQt main.cpp mainwindow.cpp)
 
 target_link_libraries(SegmentTreeQt Qt6::Widgets)
