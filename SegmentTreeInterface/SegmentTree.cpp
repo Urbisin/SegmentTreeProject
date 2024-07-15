@@ -58,6 +58,48 @@ typename SegmentTree<T>::Node* SegmentTree<T>::update(Node* node, int idx, T val
 }
 
 template<typename T>
+int SegmentTree<T>::rangeMinimumQuery(int start, int end, Node* node)
+{
+    if(start > node->end || end < node->start)
+        return INT_MAX;
+    if(start <= node->start && node->end <= end)
+        return node->minVal;
+    
+    //int mid = (node->start+node->end)/2;
+    int leftVal = rangeMinimumQuery(start, end, node->left);
+    int rightVal = rangeMinimumQuery(start, end, node->right);
+    return min(leftVal, rightVal);
+}
+
+template<typename T>
+int SegmentTree<T>::rangeMaximumQuery(int start, int end, Node* node)
+{
+    if(start > node->end || end < node->start)
+        return INT_MIN;
+    if(start <= node->start && node->end <= end)
+        return node->maxVal;
+    
+    //int mid = (node->start+node->end)/2;
+    int leftVal = rangeMaximumQuery(start, end, node->left);
+    int rightVal = rangeMaximumQuery(start, end, node->right);
+    return max(leftVal, rightVal);
+}
+
+template<typename T>
+int SegmentTree<T>::rangeSumQuery(int start, int end, Node* node)
+{
+    if(start > node->end || end < node->start)
+        return 0;
+    if(start <= node->start && node->end <= end)
+        return node->sum;
+    
+    //int mid = (node->start+node->end)/2;
+    int leftVal = rangeSumQuery(start, end, node->left);
+    int rightVal = rangeSumQuery(start, end, node->right);
+    return leftVal +rightVal;
+}
+
+template<typename T>
 SegmentTree<T>::SegmentTree(std::vector<int>& arr) {
     tree_structure.clear();
     int maxSize = 2 * std::pow(2, std::ceil(std::log2(arr.size()))) - 1;
@@ -68,6 +110,21 @@ SegmentTree<T>::SegmentTree(std::vector<int>& arr) {
 template<typename T>
 void SegmentTree<T>::update(int idx, T val) {
     update(root, idx, val, 0);
+}
+
+template<typename T>
+int SegmentTree<T>::rangeQuery(int start, int end, Type type)
+{
+    switch(type) {
+        case MIN_QUERY:
+            return rangeMinimumQuery(start, end, root);
+        case MAX_QUERY:
+            return rangeMaximumQuery(start, end, root);
+        case SUM_QUERY:
+            return rangeSumQuery(start, end, root);
+        default:
+            throw invalid_argument("Invalid query type");
+    }
 }
 
 template<typename T>
